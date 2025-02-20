@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: linear-gradient(to right, #696eff, #f8acff); 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container{
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #84ffc9, #aab2ff,#eca0ff);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: 300% 300%; /* Makes the gradient move */
+ 
+  
+  text-align: center;
+  animation: animateGradient 3s infinite linear;
+}
+@keyframes animateGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#password{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  outline: none;
+}
+#mybutton{
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Roboto;
+}
+#message{
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: Roboto;
+  letter-spacing: 0.5px;
+}
+#stren{
+  font-weight: bold;
+  font-family: Roboto;
+  letter-spacing: 1px;
+}
+#id{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  outline: none;
+
+}
+#student{
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #bf0fff, #cbff49);
+  background-size: 300% 300%; /* Makes the gradient move */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+}
