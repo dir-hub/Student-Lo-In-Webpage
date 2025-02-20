@@ -1,1 +1,1 @@
-# Student-Lo-In-Webpage
+# Student-Log-In-Webpage
