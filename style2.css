@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: linear-gradient(70deg, #f2f3e2, #b2e5f8,#f4b3ef);
+}
+p {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #68e3f9, #f55a9b, #4f4ed7);
+  background-size: 300% 300%; /* Makes the gradient move */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation: animateGradient 4s infinite linear; /* Animation */
+  font-family: Roboto;
+  letter-spacing: 2px;
+}
+
+/* Keyframes for animation */
+@keyframes animateGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+.success-message{
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #caefd7, #f5bfd7,#abc9e9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+i{
+  font-size: 60px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #68e3f9, #f55a9b, #4f4ed7);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: animate 4s infinite linear;
+}
+
+@keyframes animate{
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+
+}
