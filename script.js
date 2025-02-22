@@ -17,10 +17,10 @@ password.addEventListener('input', () => {
     message.style.color = '#CD5700';
     password.style.borderColor = '#CD5700';
     stren.innerHTML = "Medium"; // Fix: str -> stren
-  } else if (password.value.length >= 12) {
+  } else if (password.value.length >= 12 && /[0-9]/.test(password.value) && /[!@#$%^&*]/.test(password.value)) {
     message.style.color = "green";
     password.style.borderColor = "green";
-    stren.innerHTML = "Strong"; // Fix: str -> stren
+    stren.innerHTML = "Strong"; 
   }
 });
 function data(){
@@ -29,11 +29,17 @@ function data(){
   if(password === '' || id === ''){
     alert("Please enter your ID and password");
     return false;
-  }else if(password.length < 12){
-    alert("Password must be at least 12 characters long");
+  }else if(password.length < 12 || !/[0-9]/.test(password) || !/[!@#$%^&*]/.test(password)){
+    alert("Password must be at least 12 characters long and contain numbers and special characters");
     return false;
   }else{
     return true;
   }
 }
+
+// Remove the form submission prevention for forgot password link
+document.getElementById('forgot-password').onclick = function() {
+  location.href = 'index3.html';
+  return false;
+};
 

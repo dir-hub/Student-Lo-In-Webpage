@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Forgot Password</title>
+  <link href="style3.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <form id="reset-container">
+    <p id="reset-title">Reset Password</p>
+    <input type="email" id="email" placeholder="Enter your Email">
+    <button id="reset-button" onclick="return validateEmail(event)">Send Reset Link</button>
+    <a href="index.html" id="back-to-login">Back to Login</a>
+  </form>
+  <script>
+    function validateEmail(event) {
+      event.preventDefault(); // Prevent form submission
+      let email = document.getElementById("email").value;
+      if(email === '') {
+        alert("Please enter your email");
+        return false;
+      }
+      alert("Reset link sent to your email!");
+      return true;
+    }
+  </script>
+</body>
+</html>

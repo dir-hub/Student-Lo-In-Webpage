@@ -22,8 +22,8 @@ body{
   align-items: center;
   justify-content: center;
   background-size: 300% 300%; /* Makes the gradient move */
- 
-  
+
+
   text-align: center;
   animation: animateGradient 3s infinite linear;
 }
@@ -52,6 +52,25 @@ body{
   font-size: 16px;
   cursor: pointer;
   font-family: Roboto;
+  transition: background-color 0.3s ease;
+}
+
+#mybutton:hover {
+  background-color: #45a049;
+}
+
+#forgot-password {
+  color: #696eff;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: Roboto;
+  transition: color 0.3s ease;
+}
+
+#forgot-password:hover {
+  color: #4f4ed7;
+  text-decoration: underline;
 }
 #message{
   display: none;
@@ -80,10 +99,35 @@ body{
   font-size: 24px;
   font-weight: bold;
   background: linear-gradient(90deg, #bf0fff, #cbff49);
-  background-size: 300% 300%; /* Makes the gradient move */
+  background-size: 300% 300%; 
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: Roboto;
+  align-self: flex-start;
+  margin-left: 0;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #696eff;
+}
+
+.remember-me label {
+  color: #696eff;
+  cursor: pointer;
+  font-weight: 500;
 }
